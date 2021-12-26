@@ -1,6 +1,8 @@
 # Debian-10-Buster-Static-IP-assign
 
 vim  /etc/network/interfaces
+
+~~~
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
 
@@ -22,7 +24,9 @@ allow-hotplug ens8
 iface ens8 inet static
 address 192.168.2.15
 netmask 255.255.255.0
-
+~~~
+~~~
 save and exit
 the 
 systemctl restart networking
+~~~
